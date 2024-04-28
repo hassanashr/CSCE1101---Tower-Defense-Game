@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Resources/BackGround.png</file>
+        <file>Resources/Castle.png</file>
+    </qresource>
+    <qresource prefix="/pos">
+        <file>Resources/loc.txt</file>
+    </qresource>
+    <qresource prefix="/health">
+        <file>Health/Hearts0.png</file>
+        <file>Health/Hearts1.png</file>
+        <file>Health/Hearts2.png</file>
+        <file>Health/Hearts3.png</file>
+        <file>Health/Hearts4.png</file>
+        <file>Health/Hearts5.png</file>
+        <file>Health/Hearts6.png</file>
+        <file>Health/Hearts7.png</file>
+        <file>Health/Hearts8.png</file>
+        <file>Health/Hearts9.png</file>
+        <file>Health/Hearts10.png</file>
+        <file>Health/Hearts11.png</file>
+        <file>Health/Hearts12.png</file>
+        <file>Health/Hearts13.png</file>
+        <file>Health/Hearts14.png</file>
+        <file>Health/Hearts15.png</file>
+        <file>Health/Hearts16.png</file>
+        <file>Health/Hearts17.png</file>
+        <file>Health/Hearts18.png</file>
+        <file>Health/Hearts19.png</file>
+        <file>Health/Hearts20.png</file>
+    </qresource>
+</RCC>
