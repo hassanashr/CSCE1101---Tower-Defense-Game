@@ -10,19 +10,31 @@ CONFIG += c++17
 
 SOURCES += \
     castle.cpp \
+    enemy.cpp \
+    enemyspawner.cpp \
     game.cpp \
     healthbar.cpp \
+    heroenemy.cpp \
     main.cpp \
     mainwindow.cpp \
     map.cpp \
+    meleeenemy.cpp \
+    missilebullet.cpp \
+    missileenemy.cpp \
     positions.cpp
 
 HEADERS += \
     castle.h \
+    enemy.h \
+    enemyspawner.h \
     game.h \
     healthbar.h \
+    heroenemy.h \
     mainwindow.h \
-    map.h
+    map.h \
+    meleeenemy.h \
+    missilebullet.h \
+    missileenemy.h
 
 FORMS += \
     mainwindow.ui
