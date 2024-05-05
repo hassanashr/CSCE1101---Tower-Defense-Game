@@ -7,7 +7,7 @@ class MissileBullet : public QObject
 {
     Q_OBJECT
 public:
-
+    MissileBullet(QObject*);
 };
 
 #endif // MISSILEBULLET_H

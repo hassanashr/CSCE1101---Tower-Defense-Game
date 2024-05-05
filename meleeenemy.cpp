@@ -1,3 +1,10 @@
 #include "meleeenemy.h"
 
-MeleeEnemy::MeleeEnemy(){};
+MeleeEnemy::MeleeEnemy(){
+
+}
+
+void MeleeEnemy::attackCastle()
+{
+
+};

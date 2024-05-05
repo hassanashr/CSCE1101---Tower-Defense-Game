@@ -2,6 +2,7 @@
     <qresource prefix="/img">
         <file>Resources/BackGround.png</file>
         <file>Resources/Castle.png</file>
+        <file>Resources/Fence.png</file>
     </qresource>
     <qresource prefix="/pos">
         <file>Resources/loc.txt</file>

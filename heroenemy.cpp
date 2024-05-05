@@ -11,14 +11,14 @@ void HeroEnemy::attackCastle() {}
 
 void HeroEnemy::specialAbilityHeal()
 {
-    for (enemy : spawnedEnemies) {
-        enemy.increaseHealth(10);
+    for (Enemy* enemy : spawnedEnemies) {
+        enemy->increaseHealth(10);
     }
 }
 
 void HeroEnemy::specialAbilityBerserk()
 {
-    for (enemy : spawnedEnemies) {
-        enemy.increaseHealth(10);
+    for (Enemy* enemy : spawnedEnemies) {
+        enemy->increaseHealth(10);
     }
 }

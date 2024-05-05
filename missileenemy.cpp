@@ -1,6 +1,6 @@
 #include "missileenemy.h"
 
-MissileEnemy::MissileEnemy();
+MissileEnemy::MissileEnemy()
 {
     setPixmap(QPixmap(":/images/missile.png"));
 }

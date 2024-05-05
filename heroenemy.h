@@ -3,10 +3,10 @@
 #include <QObject>
 #include <enemy.h>
 
-class HeroEnemy : public QObject, public Enemy Q_OBJECT
+class HeroEnemy : public Enemy
 {
 public:
-    HeroEnemy(){};
+    HeroEnemy();
     void attackCastle();
     /* void attackWall(Wall *&); */
 
@@ -16,7 +16,7 @@ private:
     int health = 200;
     QTimer *specialAbility;
 public slots:
-    void specialAbilityHealth();
+    void specialAbilityHeal();
     void specialAbilityBerserk();
 };
 

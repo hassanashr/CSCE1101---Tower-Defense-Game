@@ -1,4 +1,5 @@
 QT       += core gui
+INCLUDEPATH +=
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,9 +13,11 @@ SOURCES += \
     castle.cpp \
     enemy.cpp \
     enemyspawner.cpp \
+    fence.cpp \
     game.cpp \
     healthbar.cpp \
     heroenemy.cpp \
+    locationreading.cpp \
     main.cpp \
     mainwindow.cpp \
     map.cpp \
@@ -27,9 +30,11 @@ HEADERS += \
     castle.h \
     enemy.h \
     enemyspawner.h \
+    fence.h \
     game.h \
     healthbar.h \
     heroenemy.h \
+    locationreading.h \
     mainwindow.h \
     map.h \
     meleeenemy.h \

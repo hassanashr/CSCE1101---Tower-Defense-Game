@@ -3,12 +3,14 @@
 
 #include <QObject>
 #include "enemy.h"
-class MeleeEnemy : public QObject, public Enemy
+#include "fence.h"
+class MeleeEnemy :  public Enemy
 {
     Q_OBJECT
 public:
+    MeleeEnemy();
     void attackCastle();
-    void attackWall(Wall *&);
+    void attackWall(Fence *&);
 
 private:
     int velocity = 3;

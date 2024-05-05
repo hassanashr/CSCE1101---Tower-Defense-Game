@@ -4,7 +4,7 @@
 
 HealthBar::HealthBar(): QObject(), QGraphicsPixmapItem() {
     updateHealth(20);
-    setPos(10, 10);
+    setPos(0, 0);
 }
 
 void HealthBar::updateHealth(int h)

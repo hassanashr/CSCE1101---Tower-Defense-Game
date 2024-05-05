@@ -4,30 +4,32 @@
 #include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QPointF>
-#include <vector>
+#include <QVector>
 using namespace std;
 class Enemy : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    Enemy(QGraphicsItem *parent = 0);
+    Enemy(QObject *parent = 0);
     void Die();
     void increaseHealth(int);
     virtual void attackCastle() = 0;
     /* virtual void attackWall(Wall *&) = 0; */
-    void getHealth();
+    int getHealth();
     void rotateToPoint(QPointF p);
-    static vector<Enemy *> getSpawnedEnemies();
+    static QVector<Enemy *> getSpawnedEnemies();
+    void increaseSpeed(int);
 
-private:
+protected:
     QTimer *moveTimer;
+    int health;
     int currRow;
     int currCol;
     QPointF destination;
-    static vector<Enemy *> spawnedEnemies;
+    static QVector<Enemy *> spawnedEnemies;
 
 public slots:
-    moveTowardsCastle();
+    void moveTowardsCastle();
 };
 
 #endif // ENEMY_H

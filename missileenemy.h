@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include "enemy.h"
-class MissileEnemy : public QObject, public Enemy
+class MissileEnemy :  public Enemy
 {
     Q_OBJECT
 public:
