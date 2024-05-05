@@ -10,7 +10,7 @@
 class Tower : public QObject, public QGraphicsPixmapItem{
 Q_OBJECT
 public:
-    Tower(QGraphicsScene *scene, QGraphicsItem * parent=0);
+    Tower(QGraphicsItem * parent=0);
     double distanceTo(QGraphicsItem * item);
      void fire();
 public slots:
@@ -18,7 +18,6 @@ public slots:
 private:
     QGraphicsPolygonItem * attack_area;
     QPointF attack_dest;
-     QGraphicsScene *m_scene;
     bool has_target;
 
 };

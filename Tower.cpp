@@ -8,8 +8,9 @@
 #include <QLineF>
 #include <QGraphicsRectItem>
 #include "Enemy.h"
-
-Tower::Tower(QGraphicsScene *scene, QGraphicsItem * parent):QObject(), QGraphicsPixmapItem(parent), m_scene(scene) {
+#include"Game.h"
+extern Game * game;
+Tower::Tower( QGraphicsItem * parent):QObject(), QGraphicsPixmapItem(parent) {
 
     setPixmap(QPixmap(":/images/Clan_Castle.png"));
 
@@ -25,8 +26,7 @@ Tower::Tower(QGraphicsScene *scene, QGraphicsItem * parent):QObject(), QGraphics
     QPolygonF polygon(points);
 
     attack_area = new QGraphicsPolygonItem(polygon,this);
-
-
+    attack_area->setPen(QPen(Qt::DotLine));
 
     QPointF polycenter(1.5,1.5);
     polycenter *= scalefactor;
@@ -52,7 +52,7 @@ void Tower::fire(){
     QLineF ln(QPointF(x()+40,y()+48),attack_dest);
     double angle = -ln.angle();
     bullet->setRotation(angle);
-    m_scene->addItem(bullet);
+    game->scene->addItem(bullet);
 
 
 }
