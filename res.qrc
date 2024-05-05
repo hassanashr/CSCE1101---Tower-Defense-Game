@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Clan_Castle.png</file>
+        <file>Bomb3.png</file>
+        <file>Barbarian_King_info.png</file>
+    </qresource>
+</RCC>
