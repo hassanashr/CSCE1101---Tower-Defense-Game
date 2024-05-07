@@ -3,7 +3,7 @@
 #include <QWidget>
 
 Fence::Fence(QGraphicsScene* scene) {
-    setPixmap(QPixmap(":/img/Resources/Fence.png").scaled(63, 63));
+    setPixmap(QPixmap(":/img/Resources/Fence.png").scaled(61, 58));
     this->scene = scene;
     /*
     healthBar->setValue(50);
@@ -27,6 +27,6 @@ void Fence::setPosition(int x, int y){
     if(y > 12 || y < 0)
         return;
 
-    setPos(x*61, y*61);
+    setPos(x*61+1, y*57 + 51);
 };
 

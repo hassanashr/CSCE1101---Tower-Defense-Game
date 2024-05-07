@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    Game w;
+    MainWindow w;
     w.show();
     return a.exec();
 }

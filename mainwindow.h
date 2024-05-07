@@ -17,6 +17,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void reset();
+
+    void on_startGame_clicked();
+
+    void on_settings_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

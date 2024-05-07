@@ -7,10 +7,12 @@
 #include "castle.h"
 #include <QMouseEvent>
 #include "locationreading.h"
+#include "closebutton.h"
 
 
 class Game : public QGraphicsView
 {
+
 public:
     Game(QWidget* parent = 0);
 
@@ -18,8 +20,13 @@ public:
 
     Castle* castle;
 
+    CloseButton * close_btn;
+
     LocationReading* locations;
 
+    bool isThere(QMouseEvent* e, int x, int y, int w, int h);
+signals:
+    void back();
 public slots:
     void mousePressEvent(QMouseEvent*);
 

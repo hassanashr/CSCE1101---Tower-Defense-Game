@@ -11,12 +11,14 @@ CONFIG += c++17
 
 SOURCES += \
     castle.cpp \
+    closebutton.cpp \
     enemy.cpp \
     enemyspawner.cpp \
     fence.cpp \
     game.cpp \
     healthbar.cpp \
     heroenemy.cpp \
+    levelwindow.cpp \
     locationreading.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -24,25 +26,31 @@ SOURCES += \
     meleeenemy.cpp \
     missilebullet.cpp \
     missileenemy.cpp \
-    positions.cpp
+    positions.cpp \
+    settings.cpp
 
 HEADERS += \
     castle.h \
+    closebutton.h \
     enemy.h \
     enemyspawner.h \
     fence.h \
     game.h \
     healthbar.h \
     heroenemy.h \
+    levelwindow.h \
     locationreading.h \
     mainwindow.h \
     map.h \
     meleeenemy.h \
     missilebullet.h \
-    missileenemy.h
+    missileenemy.h \
+    settings.h
 
 FORMS += \
-    mainwindow.ui
+    levelwindow.ui \
+    mainwindow.ui \
+    settings.ui
 
 TRANSLATIONS += \
     TowerDefense_en_US.ts
